@@ -39,8 +39,7 @@ _list = [1, 2, 3, 4]
 _list.index(2)  # find by value, return index
 ```
 
-####
-go
+#### go
 ```
 list := []int{1, 2, 3, 4}
 var position int
@@ -50,4 +49,46 @@ for index, value := range list {
         position = index
     }
 }
+```
+---
+### str is upper/lower
+#### python
+```
+_str = 'a'
+_str.islower()
+# True
+
+_str = 'A'
+_str.isupper()
+# True
+```
+
+#### go
+```
+char = 'a'
+unicode.IsLower(char)
+// true
+
+char = 'A'
+unicode.IsUpper(char)
+// true
+```
+---
+### str to upper/lower
+#### python
+```
+_str = 'a'
+_str = _str.upper()
+
+_str = 'A'
+_str.lower()
+```
+
+#### go
+```
+char = 'a'
+strings.ToUpper(char)
+
+char = 'A'
+strings.ToLower(char)
 ```
